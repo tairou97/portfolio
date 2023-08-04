@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 14px;
+}
+
+section {
+  min-height: 100vh;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  background-color: hsl(204, 43%, 93%);
+  padding: 100px 30px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  max-width: 550px;
+  border-radius: 8px;
+  margin: 0 auto;
+  box-shadow: 10px 40px 60px 0px rgb(59, 59, 59);
+  overflow: hidden;
+}
+
+/* =================box================ */
+.box {
+  padding: 30px;
+}
+/* =================box1================ */
+
+.box1 {
+  background-color: white;
+}
+
+.box1 h2 {
+  color: hsl(179, 62%, 43%);
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.box1 h3 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 8px;
+}
+
+.box1 p {
+  color: hsl(218, 22%, 67%);
+  line-height: 20px;
+}
+
+/* =================box2================ */
+
+.box2 {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.box2 h3 {
+  color: white;
+  margin-bottom: 14px;
+}
+
+.box2 h1 {
+  color: white;
+  margin-right: 15px;
+}
+
+.box2 .span {
+  color: hsl(179, 89%, 85%);
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.box2 .span p {
+  color: hsl(179, 89%, 85%);
+}
+
+.box2 span p {
+  margin-bottom: 15px;
+}
+
+.box2 p {
+  color: white;
+}
+
+.box2 button {
+  color: white;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  margin-top: 30px;
+  padding: 15px 60px;
+  width: 100%;
+  box-shadow: 1px 10px 50px 1px rgb(59, 59, 59);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* =================box3================ */
+
+.box3 {
+  background-color: hsl(179, 59%, 61%);
+}
+
+.box3 h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.box3 p {
+  color: hsl(179, 90%, 88%);
+  line-height: 20px;
+  padding: 0 50px 0 0;
+  font-size: 16px;
+}
+
+/* =================media================ */
+
+@media (min-width: 500px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "box1 box1"
+      "box2 box3";
+    max-width: 600px;
+    border-radius: 8px;
+    margin: 0 auto;
+  }
+
+  .box1 {
+    grid-area: box1;
+  }
+  .box2 {
+    grid-area: box2;
+  }
+  .box3 {
+    grid-area: box3;
+  }
+}

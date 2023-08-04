@@ -1,0 +1,141 @@
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.container {
+  padding-block: 2rem;
+  width: min(95%);
+  margin-inline: auto;
+  margin-top: 150px;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    " daniel daniel daniel daniel"
+    " jonathan jonathan jeanette   jeanette"
+    "patrick patrick patrick patrick"
+    "kira kira kira kira ";
+}
+
+.testimonials-grid {
+  padding: 1.5rem;
+  border-radius: 7px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.testimonials-grid > img {
+  margin-right: 10px;
+  margin-top: 25px;
+  border-radius: 360%;
+}
+
+h3 {
+  margin-top: 25px;
+  color: hsl(0, 0%, 100%);
+}
+
+span {
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+}
+
+.verif {
+  margin-left: 70px;
+  margin-top: -55px;
+  color: hsl(0, 0%, 81%);
+  font-size: 13px;
+}
+
+.kir-jean {
+  color: hsl(219, 29%, 14%);
+}
+
+.k-j {
+  color: hsl(217, 19%, 35%);
+}
+
+.daniel {
+  grid-column: 1 / span 4;
+  grid-area: daniel;
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 81%);
+}
+
+.jonathan {
+  grid-area: jonathan;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 81%);
+}
+
+.jeanette {
+  grid-area: jeanette;
+  color: hsl(217, 19%, 35%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.patrick {
+  grid-area: patrick;
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 81%);
+}
+
+.kira {
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  grid-area: kira;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+
+/*================ @media Handy ===============*/
+
+@media (max-width: 700px) {
+  .daniel {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+  }
+  .jonathan {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+  }
+  .jeanette {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+  }
+  .patrick {
+    grid-column: 1 / span 4;
+    grid-row: 4;
+  }
+  .kira {
+    grid-column: 1 / span 4;
+    grid-row: 5;
+  }
+}
+
+/*================ @media Desktop===============*/
+
+@media (min-width: 1100px) {
+  .daniel {
+    grid-column: span 2;
+  }
+  .jonathan {
+    grid-row: 1;
+    grid-column: 3/3;
+  }
+  .jeanette {
+    grid-column: 1/1;
+    grid-row: 2;
+  }
+
+  .patrick {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+  }
+
+  .kira {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
+}

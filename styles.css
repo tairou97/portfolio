@@ -1,0 +1,369 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: auto 0;
+  font-family: "Silkscreen", cursive;
+}
+
+/* #0679e1
+  #fd0c68 aliceblue #d8d9d9 #feffff #baddf2  #f43b1b
+  #f6e8c3 #375581  rgb(241, 236, 236)  */
+
+/* =============== header =============== */
+
+/* =============== header-wrap =============== */
+.header-wrap {
+  /* border: 2px dotted wheat; */
+  min-height: 100vh;
+  background-image: url(./Bilder/jase.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  color: #baddf2;
+}
+/* =============== header-nav =============== */
+.header-nav {
+  /* border: 2px dotted rgb(189, 152, 85); */
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.header-nav a {
+  /* border: 2px dotted rgb(222, 218, 211); */
+  text-decoration: none;
+  color: #baddf2;
+  padding: 3px 40px;
+  margin: 30px;
+  text-shadow: 10px 10px 10px rgb(25, 24, 24);
+}
+
+.header-nav a:hover {
+  /* border: 2px dotted rgb(222, 218, 211); */
+  color: black;
+  background-color: #baddf2;
+  border-radius: 10px;
+  padding: 3px 40px;
+  text-shadow: 10px 10px 10px rgb(25, 24, 24);
+}
+
+.header-nav a:active {
+  color: #baddf2;
+  background-color: #168aef;
+  text-shadow: 10px 10px 10px rgb(25, 24, 24);
+}
+
+/* =============== main-tairou =============== */
+
+.main-tairou {
+  /* border: 2px dotted rgb(221, 210, 213); */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.img-tairou {
+  padding: 40px;
+  width: 100%;
+  text-shadow: 10px 10px 10px rgb(25, 24, 24);
+}
+
+.img-tairou img {
+  justify-content: center;
+  border-radius: 50%;
+  max-width: 50%;
+  /* border: 2px dotted wheat; */
+  text-shadow: 10px 10px 10px rgb(25, 24, 24);
+}
+
+.tairou {
+  /* border: 2px dotted wheat; */
+  font-size: 30px;
+  text-shadow: 10px 10px 10px rgb(25, 24, 24);
+}
+.email {
+  border: none;
+  background-color: #168aef;
+  color: #baddf2;
+  margin-bottom: 40px;
+  padding: 5px 40px;
+  border-radius: 10px;
+  font-size: 28px;
+  text-shadow: 10px 10px 10px rgb(25, 24, 24);
+}
+
+.email:hover {
+  background-color: #baddf2;
+}
+.email:hover a {
+  color: black;
+}
+
+.email a {
+  border: none;
+  text-decoration: none;
+  color: #baddf2;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
+}
+
+/* =============== .main-container =============== */
+
+.main-container {
+  /* border: 2px dotted rgb(221, 210, 213); */
+  min-height: 100vh;
+}
+
+.main-about {
+  /* border: 2px dotted rgb(221, 210, 213); */
+  min-height: 100vh;
+  background-image: url(./Bilder/night.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.main-about h3 {
+  /* border: 2px dotted rgb(221, 210, 213); */
+  font-size: 60px;
+  letter-spacing: 20px  ;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #0679e1;
+  text-shadow: 10px 10px 10px whitesmoke;
+}
+
+.p-content {
+  /* border: 2px dotted rgb(221, 210, 213); */
+  padding: 30px;
+  color: #baddf2;
+  font-size: 28px;
+  hyphens: auto;
+  text-shadow: 10px 10px 10px rgb(29, 27, 27);
+}
+
+/* =============== Zertifikat und CV =============== */
+
+.cv {
+  /* border: 2px dotted rgb(221, 210, 213); */
+  font-size: 20px;
+  margin: 20px;
+}
+
+.cv a {
+  /* border: 2px dotted rgb(221, 210, 213); */
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+  background-color: white;
+  padding: 5px 30px;
+  border-radius: 10px;
+  text-shadow: 10px 10px 10px rgb(25, 24, 24);
+}
+
+.cv a:hover {
+  /* border: 2px dotted rgb(221, 210, 213); */
+  color: white;
+  background-color:black;
+  border-radius: 10px;
+  border: 2px dotted rgb(221, 210, 213);
+  text-decoration: none;
+  text-shadow: 10px 10px 10px rgb(25, 24, 24);
+  padding: 10px 50px;
+}
+
+.Zertifikat {
+  /* border: 2px dotted rgb(221, 210, 213); */
+  font-size: 20px;
+  margin: 20px;
+}
+
+.Zertifikat a {
+  /* border: 2px dotted rgb(221, 210, 213); */
+  text-decoration: none;
+  color: black;
+  background-color: white;  
+  padding: 5px 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border-radius: 10px;
+  border: 2px dotted rgb(221, 210, 213);
+  text-shadow: 10px 10px 10px rgb(25, 24, 24);
+}
+
+.Zertifikat a:hover { 
+  color: white;
+  background-color:black;
+  border-radius: 10px;
+  border: 2px dotted rgb(221, 210, 213);
+  padding: 10px 50px;
+}
+
+/*=========== projekt============ */
+.main-projekte {
+  background-image: url(./Bilder/china-town.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.container-pro {
+  min-height: 60vh;
+  /* border: 2px solid #fd0c68; */
+  text-align: center;
+  justify-content: space-evenly;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*=============== cards ==================*/
+
+.uberschrift {
+  /* border: 2px solid #fd0c68; */
+  font-size: 50px;
+  color: #e2e1dd; 
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 70px;
+  letter-spacing: 15px;
+  font-weight: bold;
+  text-shadow: 10px 10px 10px rgb(15, 15, 15);
+}
+
+.cards {
+  background-color: #375581;
+  /* border: 2px solid #fd0c68; */
+  margin: 10px;
+  width: 300px;
+  /* margin-top: 150px; */
+  padding: 10px;
+  color: #baddf2;
+  border-radius: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.img {
+  /* border: 2px solid #fd0c68; */
+  border-radius: 20px;
+}
+
+.img img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.img img:hover {
+  text-shadow: 10px 10px 10px rgb(5, 5, 5);
+}
+
+.title {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+ 
+
+}
+
+.title a:hover {
+  background-color: #baddf2;
+  color: #0679e1;
+  text-shadow: 10px 10px 10px rgb(25, 24, 24);
+}
+
+.title a {
+  background-color: #0679e1;
+  color: #baddf2;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 10px 10px;
+  text-shadow: 10px 10px 10px rgb(25, 24, 24);
+}
+
+.title-content {
+  /* border: 2px solid #fd0c68; */
+  background-color: #0679e1;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  text-shadow: 10px 10px 10px rgb(25, 24, 24);
+  font-weight:lighter;
+}
+
+/* =============== footer =============== */
+
+.footer {
+  /* border: 2px solid #fd0c68; */
+  min-height: 20vh;
+  text-shadow: 10px 10px 10px rgb(25, 24, 24);
+  background-color: #375581;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.email-footer {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.email-footer input {
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.email-footer button {
+  padding: 8px 30px;
+  border-radius: 10px;
+}
+
+.footer-a a {
+  /* border: 2px solid #fd0c68; */
+  color: #baddf2;
+  /* padding: 60px; */
+  margin: 70px;
+  text-decoration: none;
+  font-size: 30px;
+  justify-content: space-between;
+}
+
+.footer-a a:hover {
+  /* border: 2px solid #fd0c68; */
+  color: black;
+}
+
+.footer-img {
+  text-shadow: 10px 10px 10px rgb(25, 24, 24);
+}
+
+.footer-img img {
+  /* border: 2px solid #fd0c68; */
+  color: #baddf2;
+  padding: 40px;
+  text-decoration: none;
+  font-size: 30px;
+  text-shadow: 10px 10px 10px rgb(25, 24, 24);
+}

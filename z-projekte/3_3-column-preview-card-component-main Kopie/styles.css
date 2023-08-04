@@ -1,0 +1,175 @@
+body {
+  font-size: 15px;
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  /* border: 2px solid black; */
+min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  grid-template-areas:
+    "Sedans SUVs Luxury"
+    "Sedans SUVs Luxury"
+    "Sedans SUVs Luxury";
+
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  /* border: 2px solid black; */
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 30px;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+/*============== Sedans ===============*/
+
+.Sedans {
+  background-color: hsl(31, 77%, 52%);
+  grid-area: Sedans;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 40px;
+}
+
+.Sedans .button:hover {
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
+  cursor: pointer;
+}
+
+/*============== SUVs ===============*/
+
+.SUVs {
+  background-color: hsl(184, 100%, 22%);
+  grid-area: SUVs;
+  padding: 40px;
+}
+
+.SUVs button:hover {
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
+  cursor: pointer;
+}
+
+/*============== Luxury ===============*/
+
+.Luxury {
+  background-color: hsl(179, 100%, 13%);
+  grid-area: Luxury;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 40px;
+}
+
+.Luxury button:hover {
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(179, 100%, 13%);
+  cursor: pointer;
+}
+
+/*============== button ===============*/
+
+.button {
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 30px;
+  padding: 15px 35px;
+  margin-top: 45px;
+}
+
+.orange {
+  background-color: hsl(31, 77%, 52%);
+}
+.green {
+  background-color: hsl(184, 100%, 22%);
+}
+.dark-green {
+  background-color: hsl(179, 100%, 13%);
+}
+/* ======================Desktop==================== */
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-areas:
+      "Sedans SUVs  Luxury"
+      "Sedans SUVs  Luxury"
+      "Sedans SUVs  Luxury";
+  
+    justify-content: center;
+    align-content: center;
+  }
+
+  .card {
+    padding: 60px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 30px;
+  }
+  .Sedans {
+    grid-area: Sedans;
+    grid-column: 1;
+    grid-row: 1 / span 3;
+  }
+  .SUVs {
+    grid-area: SUVs;
+    grid-column: 2;
+    grid-row: 1 / span 3;
+  }
+  .Luxury {
+    grid-area: Luxury;
+    grid-column: 3;
+    grid-row: 1 / span 3;
+  }
+}
+
+/* ======================Mobiel==================== */
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-areas:
+      "Sedans  Sedans "
+      "SUVs   SUVs"
+      "Luxury  Luxury";
+    width: 100%;
+    min-height: 100Vh;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+  }
+  .card {
+    padding: 60px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 30px;
+  }
+  .Sedans {
+    grid-area: Sedans;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+  }
+  .SUVs {
+    grid-area: SUVs;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+  }
+  .Luxury {
+    grid-area: Luxury;
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0;
+  }
+}
